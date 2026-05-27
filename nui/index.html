@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Jumpout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="hud-container">
+        <div id="notifications"></div>
+
+        <div id="charge-container" class="hidden">
+            <div id="charge-label">蓄力中</div>
+            <div id="charge-bar-track">
+                <div id="charge-bar-fill"></div>
+            </div>
+            <div id="charge-percent">0%</div>
+        </div>
+
+        <div id="cooldown-container" class="hidden">
+            <div id="cooldown-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12,6 12,12 16,14"/>
+                </svg>
+            </div>
+            <div id="cooldown-text">冷却中</div>
+            <div id="cooldown-ring">
+                <svg width="36" height="36" viewBox="0 0 36 36">
+                    <circle cx="18" cy="18" r="16" class="ring-bg"/>
+                    <circle cx="18" cy="18" r="16" class="ring-fill" id="cooldown-ring-fill"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
